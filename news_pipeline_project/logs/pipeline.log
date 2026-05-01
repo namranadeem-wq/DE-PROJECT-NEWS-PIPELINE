@@ -1,0 +1,1336 @@
+2026-04-12 20:54:34,136 - INFO - Starting news ingestion
+2026-04-12 20:54:34,136 - INFO - Sending request to NewsAPI
+2026-04-12 20:54:35,782 - INFO - Fetched 20 articles from API
+2026-04-12 20:54:35,786 - INFO - Preview of fetched data:
+2026-04-12 20:54:35,786 - INFO - 
+      source_name                       author  ...    category                        fetched_at
+0        Pypi.org                         None  ...     general  2026-04-12T15:54:35.781234+00:00
+1        Rlsbb.to  saamaan1@yahoo.com (Master)  ...     general  2026-04-12T15:54:35.781234+00:00
+2  Financial Post               Bloomberg News  ...     general  2026-04-12T15:54:35.781234+00:00
+3        Pypi.org                         None  ...     general  2026-04-12T15:54:35.781234+00:00
+4        Pypi.org                         None  ...  technology  2026-04-12T15:54:35.781234+00:00
+
+[5 rows x 9 columns]
+2026-04-12 20:54:35,852 - INFO - Inserted 20 new rows into SQLite
+2026-04-12 20:54:35,853 - INFO - News ingestion completed successfully
+2026-04-12 20:56:53,453 - INFO - ===== DATA VALIDATION REPORT =====
+2026-04-12 20:56:53,453 - INFO - Total rows: 40
+2026-04-12 20:56:53,453 - INFO - Total columns: 10
+2026-04-12 20:56:53,453 - INFO - Missing values per column:
+2026-04-12 20:56:53,455 - INFO - 
+article_id      0
+source_name     0
+author          6
+title           0
+description     0
+url             0
+published_at    0
+content         0
+category        0
+fetched_at      0
+dtype: int64
+2026-04-12 20:56:53,457 - INFO - Checking critical columns...
+2026-04-12 20:56:53,457 - INFO - Missing titles: 0
+2026-04-12 20:56:53,457 - INFO - Missing URLs: 0
+2026-04-12 20:56:53,457 - INFO - Duplicate URLs: 0
+2026-04-12 20:56:53,457 - INFO - Category distribution:
+2026-04-12 20:56:53,458 - INFO - 
+category
+technology    18
+general       18
+gaming         3
+business       1
+Name: count, dtype: int64
+2026-04-12 20:56:53,459 - INFO - Running validation rules...
+2026-04-12 20:56:53,459 - INFO - URLs are valid
+2026-04-12 20:56:53,459 - INFO - No duplicate URLs
+2026-04-12 20:56:53,459 - INFO - Titles look fine
+2026-04-12 20:56:53,459 - INFO - ===== VALIDATION COMPLETE =====
+2026-04-12 21:02:06,031 - INFO - Starting news ingestion
+2026-04-12 21:02:06,031 - INFO - Sending request to NewsAPI
+2026-04-12 21:02:07,292 - INFO - Fetched 19 articles from API
+2026-04-12 21:02:07,294 - INFO - Preview of fetched data:
+2026-04-12 21:02:07,295 - INFO - 
+             source_name              author  ...    category                        fetched_at
+0  Bleeding Green Nation  Brandon Lee Gowton  ...     general  2026-04-12T16:02:07.291419+00:00
+1           Dealnews.com                None  ...  technology  2026-04-12T16:02:07.291419+00:00
+2               Fox News                None  ...     general  2026-04-12T16:02:07.291419+00:00
+3               Pypi.org                None  ...  technology  2026-04-12T16:02:07.291419+00:00
+4              New Atlas        David Szondy  ...  technology  2026-04-12T16:02:07.291419+00:00
+
+[5 rows x 9 columns]
+2026-04-12 21:02:07,336 - INFO - Inserted 19 new rows into SQLite
+2026-04-12 21:02:07,336 - INFO - News ingestion completed successfully
+2026-04-12 21:03:05,682 - INFO - ===== DATA VALIDATION REPORT =====
+2026-04-12 21:03:05,682 - INFO - Total rows: 19
+2026-04-12 21:03:05,682 - INFO - Total columns: 10
+2026-04-12 21:03:05,683 - INFO - Missing values per column:
+2026-04-12 21:03:05,684 - INFO - 
+article_id      0
+source_name     0
+author          5
+title           0
+description     0
+url             0
+published_at    0
+content         0
+category        0
+fetched_at      0
+dtype: int64
+2026-04-12 21:03:05,686 - INFO - Checking critical columns...
+2026-04-12 21:03:05,686 - INFO - Missing titles: 0
+2026-04-12 21:03:05,687 - INFO - Missing URLs: 0
+2026-04-12 21:03:05,687 - INFO - Duplicate URLs: 0
+2026-04-12 21:03:05,687 - INFO - Category distribution:
+2026-04-12 21:03:05,688 - INFO - 
+category
+general       10
+technology     8
+business       1
+Name: count, dtype: int64
+2026-04-12 21:03:05,689 - INFO - Running validation rules...
+2026-04-12 21:03:05,689 - INFO - URLs are valid
+2026-04-12 21:03:05,689 - INFO - No duplicate URLs
+2026-04-12 21:03:05,690 - INFO - Titles look fine
+2026-04-12 21:03:05,690 - INFO - ===== VALIDATION COMPLETE =====
+2026-04-16 19:29:17,474 - INFO - Starting news ingestion
+2026-04-16 19:29:17,475 - INFO - Sending request to NewsAPI
+2026-04-16 19:29:18,615 - INFO - Fetched 20 articles from API
+2026-04-16 19:29:18,618 - INFO - Preview of fetched data:
+2026-04-16 19:29:18,619 - INFO - 
+           source_name         author  ...    category                        fetched_at
+0              PCWorld  Gabriela Vatu  ...     general  2026-04-16T14:29:18.611419+00:00
+1        GlobeNewswire     The Agency  ...     general  2026-04-16T14:29:18.611419+00:00
+2                Skift  Dennis Schaal  ...  technology  2026-04-16T14:29:18.611419+00:00
+3                Skift  Dennis Schaal  ...  technology  2026-04-16T14:29:18.611419+00:00
+4  Yahoo Entertainment           None  ...  technology  2026-04-16T14:29:18.611419+00:00
+
+[5 rows x 9 columns]
+2026-04-16 19:29:18,672 - INFO - Inserted 20 new rows into SQLite
+2026-04-16 19:29:18,673 - INFO - News ingestion completed successfully
+2026-04-16 19:29:19,823 - INFO - ===== DATA VALIDATION REPORT =====
+2026-04-16 19:29:19,824 - INFO - Total rows: 39
+2026-04-16 19:29:19,824 - INFO - Total columns: 10
+2026-04-16 19:29:19,824 - INFO - Missing values per column:
+2026-04-16 19:29:19,826 - INFO - 
+article_id      0
+source_name     0
+author          6
+title           0
+description     1
+url             0
+published_at    0
+content         0
+category        0
+fetched_at      0
+dtype: int64
+2026-04-16 19:29:19,830 - INFO - Checking critical columns...
+2026-04-16 19:29:19,831 - INFO - Missing titles: 0
+2026-04-16 19:29:19,831 - INFO - Missing URLs: 0
+2026-04-16 19:29:19,832 - INFO - Duplicate URLs: 0
+2026-04-16 19:29:19,832 - INFO - Category distribution:
+2026-04-16 19:29:19,835 - INFO - 
+category
+general       20
+technology    16
+business       3
+Name: count, dtype: int64
+2026-04-16 19:29:19,836 - INFO - Running validation rules...
+2026-04-16 19:29:19,836 - INFO - URLs are valid
+2026-04-16 19:29:19,837 - INFO - No duplicate URLs
+2026-04-16 19:29:19,837 - INFO - Titles look fine
+2026-04-16 19:29:19,837 - INFO - ===== VALIDATION COMPLETE =====
+2026-04-22 10:04:45,271 - INFO - Starting news ingestion
+2026-04-22 10:04:45,271 - INFO - Selected topic: war
+2026-04-22 10:04:45,272 - INFO - Expanded query: war OR conflict OR military OR invasion OR ceasefire OR geopolitics OR middle east
+2026-04-22 10:04:45,272 - INFO - Sending request to NewsAPI
+2026-04-22 10:04:46,509 - INFO - Fetched 19 articles from API
+2026-04-22 10:04:46,522 - INFO - 
+Category Distribution:
+category
+general       9
+technology    4
+war           3
+business      2
+gaming        1
+Name: count, dtype: int64
+2026-04-22 10:04:46,525 - INFO - 
+Top Sources:
+source_name
+The Times of India    4
+The Irish Times       4
+PR Newswire UK        2
+Greenecountyva.gov    2
+BBC News              1
+Name: count, dtype: int64
+2026-04-22 10:04:46,541 - INFO - 
+Articles Per Day:
+published_at
+2026-04-21    19
+Name: count, dtype: int64
+2026-04-22 10:04:46,543 - INFO - Preview of fetched data:
+2026-04-22 10:04:46,544 - INFO - 
+          source_name             author  ... topic_requested                        fetched_at
+0  The Times of India            Reuters  ...             war  2026-04-22T05:04:46.496106+00:00
+1            BBC News               None  ...             war  2026-04-22T05:04:46.496106+00:00
+2      PR Newswire UK               None  ...             war  2026-04-22T05:04:46.496106+00:00
+3  The Times of India  Debaroti Adhikary  ...             war  2026-04-22T05:04:46.496106+00:00
+4     The Hockey News        Luke Jorden  ...             war  2026-04-22T05:04:46.496106+00:00
+
+[5 rows x 10 columns]
+2026-04-22 10:04:46,575 - INFO - Saved raw data to data/raw_news.csv
+2026-04-22 10:04:46,585 - ERROR - Error in ingestion: table articles has no column named topic_requested
+2026-04-22 10:07:52,331 - INFO - Starting news ingestion
+2026-04-22 10:07:52,331 - INFO - Selected topic: war
+2026-04-22 10:07:52,332 - INFO - Expanded query: war OR conflict OR military OR invasion OR ceasefire OR geopolitics OR middle east
+2026-04-22 10:07:52,332 - INFO - Sending request to NewsAPI
+2026-04-22 10:07:54,272 - INFO - Fetched 19 articles from API
+2026-04-22 10:07:54,276 - INFO - 
+Category Distribution:
+category
+general       9
+technology    4
+war           3
+business      2
+gaming        1
+Name: count, dtype: int64
+2026-04-22 10:07:54,280 - INFO - 
+Top Sources:
+source_name
+The Times of India    4
+The Irish Times       4
+PR Newswire UK        2
+Greenecountyva.gov    2
+BBC News              1
+Name: count, dtype: int64
+2026-04-22 10:07:54,289 - INFO - 
+Articles Per Day:
+published_at
+2026-04-21    19
+Name: count, dtype: int64
+2026-04-22 10:07:54,292 - INFO - Preview of fetched data:
+2026-04-22 10:07:54,292 - INFO - 
+          source_name             author  ... topic_requested                        fetched_at
+0  The Times of India            Reuters  ...             war  2026-04-22T05:07:54.270655+00:00
+1            BBC News               None  ...             war  2026-04-22T05:07:54.270655+00:00
+2      PR Newswire UK               None  ...             war  2026-04-22T05:07:54.270655+00:00
+3  The Times of India  Debaroti Adhikary  ...             war  2026-04-22T05:07:54.270655+00:00
+4     The Hockey News        Luke Jorden  ...             war  2026-04-22T05:07:54.270655+00:00
+
+[5 rows x 10 columns]
+2026-04-22 10:07:54,312 - INFO - Saved raw data to data/raw_news.csv
+2026-04-22 10:07:54,331 - ERROR - Error in ingestion: Error binding parameter 6: type 'Timestamp' is not supported
+2026-04-22 10:21:15,630 - INFO - Starting news ingestion
+2026-04-22 10:21:15,630 - INFO - Selected topic: war
+2026-04-22 10:21:15,630 - INFO - Expanded query: war OR conflict OR military OR invasion OR ceasefire OR geopolitics OR middle east
+2026-04-22 10:21:15,630 - INFO - Sending request to NewsAPI
+2026-04-22 10:21:16,580 - INFO - Fetched 19 articles from API
+2026-04-22 10:21:16,583 - INFO - 
+Category Distribution:
+category
+general       10
+technology     4
+war            3
+business       1
+gaming         1
+Name: count, dtype: int64
+2026-04-22 10:21:16,585 - INFO - 
+Top Sources:
+source_name
+The Times of India    4
+The Irish Times       4
+BBC News              2
+PR Newswire UK        2
+ComputerWeekly.com    1
+Name: count, dtype: int64
+2026-04-22 10:21:16,591 - INFO - 
+Articles Per Day:
+published_at
+2026-04-21    19
+Name: count, dtype: int64
+2026-04-22 10:21:16,593 - INFO - Preview of fetched data:
+2026-04-22 10:21:16,593 - INFO - 
+          source_name                   author  ... topic_requested                        fetched_at
+0            BBC News  Simon Thake - Yorkshire  ...             war  2026-04-22T05:21:16.578500+00:00
+1  The Times of India                      AFP  ...             war  2026-04-22T05:21:16.578500+00:00
+2  ComputerWeekly.com            Andrea Benito  ...             war  2026-04-22T05:21:16.578500+00:00
+3                 CNA                     None  ...             war  2026-04-22T05:21:16.578500+00:00
+4      Breitbart News                  Pam Key  ...             war  2026-04-22T05:21:16.578500+00:00
+
+[5 rows x 10 columns]
+2026-04-22 10:21:16,619 - INFO - Saved raw data to data/raw_news.csv
+2026-04-22 10:21:16,643 - INFO - Inserted 19 new rows into SQLite
+2026-04-22 10:21:16,643 - INFO - News ingestion completed successfully
+2026-04-22 10:35:08,315 - INFO - ===== DATA VALIDATION REPORT =====
+2026-04-22 10:35:08,315 - INFO - Total rows: 19
+2026-04-22 10:35:08,315 - INFO - Total columns: 11
+2026-04-22 10:35:08,315 - INFO - Missing values per column:
+2026-04-22 10:35:08,317 - INFO - 
+article_id         0
+source_name        0
+author             4
+title              0
+description        0
+url                0
+published_at       0
+content            0
+category           0
+topic_requested    0
+fetched_at         0
+dtype: int64
+2026-04-22 10:35:08,318 - INFO - Checking critical columns...
+2026-04-22 10:35:08,321 - INFO - Missing titles: 0
+2026-04-22 10:35:08,321 - INFO - Missing URLs: 0
+2026-04-22 10:35:08,321 - INFO - Duplicate URLs: 0
+2026-04-22 10:35:08,321 - INFO - Missing authors: 4
+2026-04-22 10:35:08,322 - INFO - Missing topic_requested values: 0
+2026-04-22 10:35:08,322 - INFO - Category distribution:
+2026-04-22 10:35:08,323 - INFO - 
+category
+general       10
+technology     4
+war            3
+business       1
+gaming         1
+Name: count, dtype: int64
+2026-04-22 10:35:08,325 - INFO - Requested topic distribution:
+2026-04-22 10:35:08,325 - INFO - 
+topic_requested
+war    19
+Name: count, dtype: int64
+2026-04-22 10:35:08,326 - INFO - Running validation rules...
+2026-04-22 10:35:08,327 - INFO - URLs are valid
+2026-04-22 10:35:08,327 - INFO - No duplicate URLs
+2026-04-22 10:35:08,327 - INFO - Titles look fine
+2026-04-22 10:35:08,328 - WARNING - Missing authors found: 4 (allowed, non-critical field)
+2026-04-22 10:35:08,328 - INFO - All records have topic_requested
+2026-04-22 10:35:08,331 - INFO - published_at values are valid
+2026-04-22 10:35:08,332 - INFO - ===== VALIDATION COMPLETE =====
+2026-04-22 11:08:03,722 - INFO - ===== DATA VALIDATION REPORT =====
+2026-04-22 11:08:03,722 - INFO - Total rows: 19
+2026-04-22 11:08:03,722 - INFO - Total columns: 11
+2026-04-22 11:08:03,722 - INFO - Missing values per column:
+2026-04-22 11:08:03,724 - INFO - 
+article_id         0
+source_name        0
+author             4
+title              0
+description        0
+url                0
+published_at       0
+content            0
+category           0
+topic_requested    0
+fetched_at         0
+dtype: int64
+2026-04-22 11:08:03,725 - INFO - Checking critical columns...
+2026-04-22 11:08:03,726 - INFO - Missing titles: 0
+2026-04-22 11:08:03,727 - INFO - Missing URLs: 0
+2026-04-22 11:08:03,727 - INFO - Duplicate URLs: 0
+2026-04-22 11:08:03,728 - INFO - Missing authors: 4
+2026-04-22 11:08:03,728 - INFO - Missing topic_requested values: 0
+2026-04-22 11:08:03,728 - INFO - Category distribution:
+2026-04-22 11:08:03,729 - INFO - 
+category
+general       10
+technology     4
+war            3
+business       1
+gaming         1
+Name: count, dtype: int64
+2026-04-22 11:08:03,730 - INFO - Requested topic distribution:
+2026-04-22 11:08:03,730 - INFO - 
+topic_requested
+war    19
+Name: count, dtype: int64
+2026-04-22 11:08:03,731 - INFO - Running validation rules...
+2026-04-22 11:08:03,731 - INFO - URLs are valid
+2026-04-22 11:08:03,731 - INFO - No duplicate URLs
+2026-04-22 11:08:03,731 - INFO - Titles look fine
+2026-04-22 11:08:03,731 - WARNING - Missing authors found: 4 (allowed, non-critical field)
+2026-04-22 11:08:03,732 - INFO - All records have topic_requested
+2026-04-22 11:08:03,734 - INFO - published_at values are valid
+2026-04-22 11:08:03,734 - INFO - ===== VALIDATION COMPLETE =====
+2026-04-22 11:49:19,499 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-22 11:49:19,499 - INFO - Raw rows before cleaning: 19
+2026-04-22 11:49:19,509 - INFO - Processed rows after cleaning: 19
+2026-04-22 11:49:19,510 - INFO - Processed data saved to data/processed_news.csv
+2026-04-22 11:49:19,510 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-22 11:50:53,317 - INFO - ===== DATA VALIDATION REPORT =====
+2026-04-22 11:50:53,317 - INFO - Total rows: 19
+2026-04-22 11:50:53,317 - INFO - Total columns: 11
+2026-04-22 11:50:53,317 - INFO - Missing values per column:
+2026-04-22 11:50:53,319 - INFO - 
+article_id         0
+source_name        0
+author             4
+title              0
+description        0
+url                0
+published_at       0
+content            0
+category           0
+topic_requested    0
+fetched_at         0
+dtype: int64
+2026-04-22 11:50:53,320 - INFO - Checking critical columns...
+2026-04-22 11:50:53,321 - INFO - Missing titles: 0
+2026-04-22 11:50:53,321 - INFO - Missing URLs: 0
+2026-04-22 11:50:53,321 - INFO - Duplicate URLs: 0
+2026-04-22 11:50:53,321 - INFO - Missing authors: 4
+2026-04-22 11:50:53,322 - INFO - Missing topic_requested values: 0
+2026-04-22 11:50:53,322 - INFO - Category distribution:
+2026-04-22 11:50:53,322 - INFO - 
+category
+general       10
+technology     4
+war            3
+business       1
+gaming         1
+Name: count, dtype: int64
+2026-04-22 11:50:53,324 - INFO - Requested topic distribution:
+2026-04-22 11:50:53,324 - INFO - 
+topic_requested
+war    19
+Name: count, dtype: int64
+2026-04-22 11:50:53,325 - INFO - Running validation rules...
+2026-04-22 11:50:53,326 - INFO - URLs are valid
+2026-04-22 11:50:53,326 - INFO - No duplicate URLs
+2026-04-22 11:50:53,327 - INFO - Titles look fine
+2026-04-22 11:50:53,327 - WARNING - Missing authors found: 4 (allowed, non-critical field)
+2026-04-22 11:50:53,327 - INFO - All records have topic_requested
+2026-04-22 11:50:53,329 - INFO - published_at values are valid
+2026-04-22 11:50:53,329 - INFO - ===== VALIDATION COMPLETE =====
+2026-04-22 11:51:33,393 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-22 11:51:33,394 - INFO - Raw rows before cleaning: 19
+2026-04-22 11:51:33,402 - INFO - Processed rows after cleaning: 19
+2026-04-22 11:51:33,403 - INFO - Processed data saved to data/processed_news.csv
+2026-04-22 11:51:33,403 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-22 11:51:34,071 - INFO - ===== DATA VALIDATION REPORT =====
+2026-04-22 11:51:34,071 - INFO - Total rows: 19
+2026-04-22 11:51:34,071 - INFO - Total columns: 11
+2026-04-22 11:51:34,072 - INFO - Missing values per column:
+2026-04-22 11:51:34,073 - INFO - 
+article_id         0
+source_name        0
+author             4
+title              0
+description        0
+url                0
+published_at       0
+content            0
+category           0
+topic_requested    0
+fetched_at         0
+dtype: int64
+2026-04-22 11:51:34,074 - INFO - Checking critical columns...
+2026-04-22 11:51:34,075 - INFO - Missing titles: 0
+2026-04-22 11:51:34,075 - INFO - Missing URLs: 0
+2026-04-22 11:51:34,075 - INFO - Duplicate URLs: 0
+2026-04-22 11:51:34,075 - INFO - Missing authors: 4
+2026-04-22 11:51:34,075 - INFO - Missing topic_requested values: 0
+2026-04-22 11:51:34,075 - INFO - Category distribution:
+2026-04-22 11:51:34,076 - INFO - 
+category
+general       10
+technology     4
+war            3
+business       1
+gaming         1
+Name: count, dtype: int64
+2026-04-22 11:51:34,077 - INFO - Requested topic distribution:
+2026-04-22 11:51:34,077 - INFO - 
+topic_requested
+war    19
+Name: count, dtype: int64
+2026-04-22 11:51:34,078 - INFO - Running validation rules...
+2026-04-22 11:51:34,079 - INFO - URLs are valid
+2026-04-22 11:51:34,079 - INFO - No duplicate URLs
+2026-04-22 11:51:34,080 - INFO - Titles look fine
+2026-04-22 11:51:34,080 - WARNING - Missing authors found: 4 (allowed, non-critical field)
+2026-04-22 11:51:34,080 - INFO - All records have topic_requested
+2026-04-22 11:51:34,082 - INFO - published_at values are valid
+2026-04-22 11:51:34,082 - INFO - ===== VALIDATION COMPLETE =====
+2026-04-22 13:16:33,328 - INFO - Starting multi-topic news ingestion
+2026-04-22 13:16:33,328 - INFO - Fetching topic: war
+2026-04-22 13:16:33,328 - INFO - Expanded query: war OR conflict OR military OR invasion OR ceasefire OR missile OR airstrike OR iran OR israel OR gaza OR ukraine OR russia
+2026-04-22 13:16:33,328 - INFO - Requesting topic=war, page=1
+2026-04-22 13:16:35,299 - INFO - Fetched 90 articles for topic=war, page=1
+2026-04-22 13:16:36,303 - INFO - Requesting topic=war, page=2
+2026-04-22 13:16:37,110 - WARNING - Topic=war, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 13:16:39,942 - WARNING - Topic=war, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 13:16:42,778 - WARNING - Topic=war, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 13:16:44,779 - WARNING - Non-ok API response for topic=war, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-22 13:16:44,784 - INFO - Fetching topic: ai
+2026-04-22 13:16:44,784 - INFO - Expanded query: "artificial intelligence" OR AI OR "machine learning" OR OpenAI OR ChatGPT OR LLM OR "deep learning"
+2026-04-22 13:16:44,785 - INFO - Requesting topic=ai, page=1
+2026-04-22 13:16:45,766 - INFO - Fetched 100 articles for topic=ai, page=1
+2026-04-22 13:16:46,772 - INFO - Requesting topic=ai, page=2
+2026-04-22 13:16:47,589 - WARNING - Topic=ai, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 13:16:50,406 - WARNING - Topic=ai, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 13:16:53,237 - WARNING - Topic=ai, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 13:16:55,238 - WARNING - Non-ok API response for topic=ai, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-22 13:16:55,243 - INFO - Fetching topic: fashion
+2026-04-22 13:16:55,243 - INFO - Expanded query: fashion OR style OR runway OR designer OR clothing OR beauty OR luxury OR couture
+2026-04-22 13:16:55,244 - INFO - Requesting topic=fashion, page=1
+2026-04-22 13:16:56,260 - INFO - Fetched 99 articles for topic=fashion, page=1
+2026-04-22 13:16:57,266 - INFO - Requesting topic=fashion, page=2
+2026-04-22 13:16:58,102 - WARNING - Topic=fashion, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 13:17:01,040 - WARNING - Topic=fashion, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 13:17:03,967 - WARNING - Topic=fashion, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 13:17:05,968 - WARNING - Non-ok API response for topic=fashion, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-22 13:17:05,971 - INFO - Fetching topic: business
+2026-04-22 13:17:05,972 - INFO - Expanded query: business OR market OR finance OR economy OR trade OR investment OR company
+2026-04-22 13:17:05,972 - INFO - Requesting topic=business, page=1
+2026-04-22 13:17:07,048 - INFO - Fetched 96 articles for topic=business, page=1
+2026-04-22 13:17:08,055 - INFO - Requesting topic=business, page=2
+2026-04-22 13:17:08,873 - WARNING - Topic=business, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 13:17:11,710 - WARNING - Topic=business, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 13:17:14,526 - WARNING - Topic=business, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 13:17:16,527 - WARNING - Non-ok API response for topic=business, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-22 13:17:16,541 - INFO - Dropped 80 duplicate URLs
+2026-04-22 13:17:16,541 - INFO - Total unique fetched articles: 305
+2026-04-22 13:17:16,544 - INFO - 
+Topic Distribution:
+topic_requested
+war         90
+ai          89
+fashion     79
+business    47
+Name: count, dtype: int64
+2026-04-22 13:17:16,546 - INFO - 
+Category Distribution:
+category
+ai            132
+war            84
+general        50
+business       25
+fashion         6
+technology      6
+gaming          2
+Name: count, dtype: int64
+2026-04-22 13:17:16,547 - INFO - Preview of fetched data:
+2026-04-22 13:17:16,548 - INFO - 
+        source_name                author  ... topic_requested                        fetched_at
+0           Haaretz           Nati Tucker  ...             war  2026-04-22T08:16:33.328595+00:00
+1           Fortune      Jacqueline Munis  ...             war  2026-04-22T08:16:33.328595+00:00
+2          HuffPost              Ed Mazza  ...             war  2026-04-22T08:16:33.328595+00:00
+3          Livemint  Agnidev Bhattacharya  ...             war  2026-04-22T08:16:33.328595+00:00
+4  Rasamalaysia.com         Rasa Malaysia  ...             war  2026-04-22T08:16:33.328595+00:00
+
+[5 rows x 10 columns]
+2026-04-22 13:17:16,570 - INFO - Saved raw data to data/raw_news.csv
+2026-04-22 13:17:16,604 - INFO - Inserted 305 new rows into SQLite
+2026-04-22 13:17:16,605 - INFO - News ingestion completed successfully
+2026-04-22 14:30:45,289 - INFO - Starting multi-topic news ingestion
+2026-04-22 14:30:45,290 - INFO - Fetching topic: war
+2026-04-22 14:30:45,290 - INFO - Expanded query: war OR conflict OR military OR invasion OR ceasefire OR missile OR airstrike OR iran OR israel OR gaza OR ukraine OR russia
+2026-04-22 14:30:45,290 - INFO - Date window: 2026-04-10 to 2026-04-22
+2026-04-22 14:30:45,290 - INFO - Requesting topic=war, page=1
+2026-04-22 14:30:48,163 - INFO - Fetched 95 articles for topic=war, page=1
+2026-04-22 14:30:49,176 - INFO - Requesting topic=war, page=2
+2026-04-22 14:30:50,136 - WARNING - Topic=war, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:30:53,107 - WARNING - Topic=war, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:30:56,180 - WARNING - Topic=war, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:30:58,180 - WARNING - Non-ok API response for topic=war, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-22 14:30:58,197 - INFO - Fetching topic: ai
+2026-04-22 14:30:58,199 - INFO - Expanded query: "artificial intelligence" OR AI OR "machine learning" OR OpenAI OR ChatGPT OR LLM OR "deep learning"
+2026-04-22 14:30:58,199 - INFO - Date window: 2026-04-10 to 2026-04-22
+2026-04-22 14:30:58,199 - INFO - Requesting topic=ai, page=1
+2026-04-22 14:30:59,213 - INFO - Fetched 99 articles for topic=ai, page=1
+2026-04-22 14:31:00,217 - INFO - Requesting topic=ai, page=2
+2026-04-22 14:31:01,194 - WARNING - Topic=ai, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:31:04,245 - WARNING - Topic=ai, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:31:07,135 - WARNING - Topic=ai, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:31:09,137 - WARNING - Non-ok API response for topic=ai, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-22 14:31:09,142 - INFO - Fetching topic: fashion
+2026-04-22 14:31:09,143 - INFO - Expanded query: fashion OR style OR runway OR designer OR clothing OR beauty OR luxury OR couture
+2026-04-22 14:31:09,144 - INFO - Date window: 2026-04-10 to 2026-04-22
+2026-04-22 14:31:09,144 - INFO - Requesting topic=fashion, page=1
+2026-04-22 14:31:10,314 - INFO - Fetched 97 articles for topic=fashion, page=1
+2026-04-22 14:31:11,330 - INFO - Requesting topic=fashion, page=2
+2026-04-22 14:31:12,253 - WARNING - Topic=fashion, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:31:15,225 - WARNING - Topic=fashion, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:31:18,155 - WARNING - Topic=fashion, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:31:20,156 - WARNING - Non-ok API response for topic=fashion, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-22 14:31:20,161 - INFO - Fetching topic: business
+2026-04-22 14:31:20,161 - INFO - Expanded query: business OR market OR finance OR economy OR trade OR investment OR company
+2026-04-22 14:31:20,163 - INFO - Date window: 2026-04-10 to 2026-04-22
+2026-04-22 14:31:20,165 - INFO - Requesting topic=business, page=1
+2026-04-22 14:31:21,371 - INFO - Fetched 96 articles for topic=business, page=1
+2026-04-22 14:31:22,378 - INFO - Requesting topic=business, page=2
+2026-04-22 14:31:23,414 - WARNING - Topic=business, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:31:26,487 - WARNING - Topic=business, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:31:29,560 - WARNING - Topic=business, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:31:31,561 - WARNING - Non-ok API response for topic=business, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-22 14:31:31,574 - INFO - Dropped 71 duplicate URLs
+2026-04-22 14:31:31,574 - INFO - Total unique fetched articles: 316
+2026-04-22 14:31:31,577 - INFO - 
+Topic Distribution:
+topic_requested
+war         95
+ai          86
+fashion     86
+business    49
+Name: count, dtype: int64
+2026-04-22 14:31:31,580 - INFO - 
+Category Distribution:
+category
+ai            131
+war            79
+general        53
+business       28
+fashion        17
+technology      5
+gaming          3
+Name: count, dtype: int64
+2026-04-22 14:31:31,585 - INFO - 
+Articles Per Day:
+published_at
+2026-04-21    316
+Name: count, dtype: int64
+2026-04-22 14:31:31,586 - INFO - Preview of fetched data:
+2026-04-22 14:31:31,586 - INFO - 
+              source_name                              author  ... topic_requested                        fetched_at
+0      Al Jazeera English                        Caolán Magee  ...             war  2026-04-22T09:30:45.290283+00:00
+1  Israelnationalnews.com                Israel National News  ...             war  2026-04-22T09:30:45.290283+00:00
+2                HackRead                         Deeba Ahmed  ...             war  2026-04-22T09:30:45.290283+00:00
+3    Milforddailynews.com  Beth McDermott, Milford Daily News  ...             war  2026-04-22T09:30:45.290283+00:00
+4      The Times of India                         Team Global  ...             war  2026-04-22T09:30:45.290283+00:00
+
+[5 rows x 10 columns]
+2026-04-22 14:31:31,612 - INFO - Saved raw data to data/raw_news.csv
+2026-04-22 14:31:31,650 - INFO - Inserted 316 new rows into SQLite
+2026-04-22 14:31:31,650 - INFO - News ingestion completed successfully
+2026-04-22 14:40:52,613 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-22 14:40:52,613 - INFO - Raw rows before cleaning: 316
+2026-04-22 14:40:52,616 - INFO - Dropped duplicate URLs: 0
+2026-04-22 14:40:52,618 - INFO - Dropped rows missing critical fields (['title', 'url']): 0
+2026-04-22 14:40:52,618 - INFO - Filled missing authors with 'Unknown': 43
+2026-04-22 14:40:52,619 - INFO - Filled missing source_name with 'Unknown': 0
+2026-04-22 14:40:52,624 - INFO - Invalid published_at values found: 0
+2026-04-22 14:40:52,627 - INFO - Dropped rows with invalid published_at: 0
+2026-04-22 14:40:52,641 - INFO - Processed rows after cleaning: 316
+2026-04-22 14:40:52,641 - INFO - Processed data saved to data/processed_news.csv
+2026-04-22 14:40:52,642 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-22 14:42:42,251 - INFO - Starting multi-topic news ingestion
+2026-04-22 14:42:42,251 - INFO - Fetching topic: war
+2026-04-22 14:42:42,252 - INFO - Expanded query: war OR conflict OR military OR invasion OR ceasefire OR missile OR airstrike OR iran OR israel OR gaza OR ukraine OR russia
+2026-04-22 14:42:42,252 - INFO - Date window: 2026-04-10 to 2026-04-22
+2026-04-22 14:42:42,252 - INFO - Requesting topic=war, page=1
+2026-04-22 14:42:43,760 - INFO - Fetched 93 articles for topic=war, page=1
+2026-04-22 14:42:44,765 - INFO - Requesting topic=war, page=2
+2026-04-22 14:42:46,529 - WARNING - Topic=war, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:42:49,694 - WARNING - Topic=war, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:42:53,182 - WARNING - Topic=war, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:42:55,183 - WARNING - Non-ok API response for topic=war, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-22 14:42:55,191 - INFO - Fetching topic: ai
+2026-04-22 14:42:55,191 - INFO - Expanded query: "artificial intelligence" OR AI OR "machine learning" OR OpenAI OR ChatGPT OR LLM OR "deep learning"
+2026-04-22 14:42:55,192 - INFO - Date window: 2026-04-10 to 2026-04-22
+2026-04-22 14:42:55,192 - INFO - Requesting topic=ai, page=1
+2026-04-22 14:42:56,767 - INFO - Fetched 98 articles for topic=ai, page=1
+2026-04-22 14:42:57,773 - INFO - Requesting topic=ai, page=2
+2026-04-22 14:42:59,087 - WARNING - Topic=ai, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:43:02,395 - WARNING - Topic=ai, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:43:05,243 - WARNING - Topic=ai, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:43:07,244 - WARNING - Non-ok API response for topic=ai, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-22 14:43:07,252 - INFO - Fetching topic: fashion
+2026-04-22 14:43:07,253 - INFO - Expanded query: fashion OR style OR runway OR designer OR clothing OR beauty OR luxury OR couture
+2026-04-22 14:43:07,253 - INFO - Date window: 2026-04-10 to 2026-04-22
+2026-04-22 14:43:07,254 - INFO - Requesting topic=fashion, page=1
+2026-04-22 14:43:09,156 - INFO - Fetched 97 articles for topic=fashion, page=1
+2026-04-22 14:43:10,163 - INFO - Requesting topic=fashion, page=2
+2026-04-22 14:43:11,670 - WARNING - Topic=fashion, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:43:15,194 - WARNING - Topic=fashion, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:43:18,677 - WARNING - Topic=fashion, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:43:20,679 - WARNING - Non-ok API response for topic=fashion, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-22 14:43:20,686 - INFO - Fetching topic: business
+2026-04-22 14:43:20,686 - INFO - Expanded query: business OR market OR finance OR economy OR trade OR investment OR company
+2026-04-22 14:43:20,689 - INFO - Date window: 2026-04-10 to 2026-04-22
+2026-04-22 14:43:20,689 - INFO - Requesting topic=business, page=1
+2026-04-22 14:43:22,368 - INFO - Fetched 96 articles for topic=business, page=1
+2026-04-22 14:43:23,374 - INFO - Requesting topic=business, page=2
+2026-04-22 14:43:24,920 - WARNING - Topic=business, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:43:28,160 - WARNING - Topic=business, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:43:31,169 - WARNING - Topic=business, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-10&to=2026-04-22&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-22 14:43:33,171 - WARNING - Non-ok API response for topic=business, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-22 14:43:33,179 - INFO - Dropped 67 duplicate URLs
+2026-04-22 14:43:33,179 - INFO - Total unique fetched articles: 317
+2026-04-22 14:43:33,185 - INFO - 
+Topic Distribution:
+topic_requested
+war         92
+ai          88
+fashion     86
+business    51
+Name: count, dtype: int64
+2026-04-22 14:43:33,190 - INFO - 
+Category Distribution:
+category
+ai            149
+war            76
+general        48
+business       22
+fashion        15
+technology      4
+gaming          3
+Name: count, dtype: int64
+2026-04-22 14:43:33,205 - INFO - 
+Articles Per Day:
+published_at
+2026-04-21    317
+Name: count, dtype: int64
+2026-04-22 14:43:33,209 - INFO - Preview of fetched data:
+2026-04-22 14:43:33,210 - INFO - 
+              source_name                author  ... topic_requested                        fetched_at
+0         Crypto Briefing        Estefano Gomez  ...             war  2026-04-22T09:42:42.251943+00:00
+1            BusinessLine   BL Mangaluru Bureau  ...             war  2026-04-22T09:42:42.251943+00:00
+2          Slate Magazine            Aki Peritz  ...             war  2026-04-22T09:42:42.251943+00:00
+3    Peoplesreview.com.np                 team1  ...             war  2026-04-22T09:42:42.251943+00:00
+4  Israelnationalnews.com  Israel National News  ...             war  2026-04-22T09:42:42.251943+00:00
+
+[5 rows x 10 columns]
+2026-04-22 14:43:33,284 - INFO - Saved raw data to data/raw_news.csv
+2026-04-22 14:43:33,378 - INFO - Inserted 317 new rows into SQLite
+2026-04-22 14:43:33,379 - INFO - News ingestion completed successfully
+2026-04-22 14:43:34,253 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-22 14:43:34,253 - INFO - Raw rows before cleaning: 317
+2026-04-22 14:43:34,256 - INFO - Dropped duplicate URLs: 0
+2026-04-22 14:43:34,257 - INFO - Dropped rows missing critical fields (['title', 'url']): 0
+2026-04-22 14:43:34,257 - INFO - Filled missing authors with 'Unknown': 42
+2026-04-22 14:43:34,258 - INFO - Filled missing source_name with 'Unknown': 0
+2026-04-22 14:43:34,261 - INFO - Invalid published_at values found: 0
+2026-04-22 14:43:34,262 - INFO - Dropped rows with invalid published_at: 0
+2026-04-22 14:43:34,275 - INFO - Processed rows after cleaning: 317
+2026-04-22 14:43:34,276 - INFO - Processed data saved to data/processed_news.csv
+2026-04-22 14:43:34,276 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-22 14:43:35,122 - INFO - ===== DATA VALIDATION REPORT =====
+2026-04-22 14:43:35,122 - INFO - Total rows: 317
+2026-04-22 14:43:35,122 - INFO - Total columns: 11
+2026-04-22 14:43:35,123 - INFO - Missing values per column:
+2026-04-22 14:43:35,124 - INFO - 
+article_id          0
+source_name         0
+author             42
+title               0
+description         5
+url                 0
+published_at        0
+content             0
+category            0
+topic_requested     0
+fetched_at          0
+dtype: int64
+2026-04-22 14:43:35,125 - INFO - Checking critical columns...
+2026-04-22 14:43:35,126 - INFO - Missing titles: 0
+2026-04-22 14:43:35,126 - INFO - Missing URLs: 0
+2026-04-22 14:43:35,126 - INFO - Duplicate URLs: 0
+2026-04-22 14:43:35,127 - INFO - Missing authors: 42
+2026-04-22 14:43:35,127 - INFO - Missing topic_requested values: 0
+2026-04-22 14:43:35,127 - INFO - Category distribution:
+2026-04-22 14:43:35,128 - INFO - 
+category
+ai            149
+war            76
+general        48
+business       22
+fashion        15
+technology      4
+gaming          3
+Name: count, dtype: int64
+2026-04-22 14:43:35,129 - INFO - Requested topic distribution:
+2026-04-22 14:43:35,129 - INFO - 
+topic_requested
+war         92
+ai          88
+fashion     86
+business    51
+Name: count, dtype: int64
+2026-04-22 14:43:35,130 - INFO - Running validation rules...
+2026-04-22 14:43:35,130 - INFO - URLs are valid
+2026-04-22 14:43:35,131 - INFO - No duplicate URLs
+2026-04-22 14:43:35,131 - INFO - Titles look fine
+2026-04-22 14:43:35,131 - WARNING - Missing authors found: 42 (allowed, non-critical field)
+2026-04-22 14:43:35,131 - INFO - All records have topic_requested
+2026-04-22 14:43:35,136 - INFO - published_at values are valid
+2026-04-22 14:43:35,136 - INFO - ===== VALIDATION COMPLETE =====
+2026-04-23 09:20:47,855 - INFO - Starting maximum-data multi-topic news ingestion
+2026-04-23 09:20:47,855 - INFO - Fetching topic: war
+2026-04-23 09:20:47,855 - INFO - Expanded query: war OR conflict OR military OR invasion OR ceasefire OR missile OR airstrike OR iran OR israel OR gaza OR ukraine OR russia
+2026-04-23 09:20:47,856 - INFO - Date window: 2026-04-09 to 2026-04-23
+2026-04-23 09:20:47,856 - INFO - Requesting topic=war, page=1
+2026-04-23 09:20:48,826 - INFO - Fetched 88 articles for topic=war, page=1
+2026-04-23 09:20:49,830 - INFO - Requesting topic=war, page=2
+2026-04-23 09:20:50,566 - WARNING - Topic=war, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:20:53,329 - WARNING - Topic=war, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:20:56,057 - WARNING - Topic=war, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:20:58,058 - WARNING - Non-ok API response for topic=war, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:20:58,059 - INFO - Requesting topic=war, page=3
+2026-04-23 09:20:58,845 - WARNING - Topic=war, page=3, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=3&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:01,563 - WARNING - Topic=war, page=3, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=3&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:04,668 - WARNING - Topic=war, page=3, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=3&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:06,669 - WARNING - Non-ok API response for topic=war, page=3: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 200 to 300. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:21:06,670 - INFO - Requesting topic=war, page=4
+2026-04-23 09:21:07,524 - WARNING - Topic=war, page=4, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=4&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:10,254 - WARNING - Topic=war, page=4, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=4&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:13,020 - WARNING - Topic=war, page=4, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=4&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:15,021 - WARNING - Non-ok API response for topic=war, page=4: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 300 to 400. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:21:15,022 - INFO - Requesting topic=war, page=5
+2026-04-23 09:21:15,783 - WARNING - Topic=war, page=5, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=5&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:18,609 - WARNING - Topic=war, page=5, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=5&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:21,339 - WARNING - Topic=war, page=5, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=war+OR+conflict+OR+military+OR+invasion+OR+ceasefire+OR+missile+OR+airstrike+OR+iran+OR+israel+OR+gaza+OR+ukraine+OR+russia&language=en&pageSize=100&page=5&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:23,340 - WARNING - Non-ok API response for topic=war, page=5: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 400 to 500. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:21:23,356 - INFO - Fetching topic: ai
+2026-04-23 09:21:23,356 - INFO - Expanded query: "artificial intelligence" OR AI OR "machine learning" OR OpenAI OR ChatGPT OR LLM OR "deep learning"
+2026-04-23 09:21:23,357 - INFO - Date window: 2026-04-09 to 2026-04-23
+2026-04-23 09:21:23,358 - INFO - Requesting topic=ai, page=1
+2026-04-23 09:21:24,405 - INFO - Fetched 100 articles for topic=ai, page=1
+2026-04-23 09:21:25,420 - INFO - Requesting topic=ai, page=2
+2026-04-23 09:21:26,372 - WARNING - Topic=ai, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:29,219 - WARNING - Topic=ai, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:32,031 - WARNING - Topic=ai, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:34,032 - WARNING - Non-ok API response for topic=ai, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:21:34,032 - INFO - Requesting topic=ai, page=3
+2026-04-23 09:21:34,810 - WARNING - Topic=ai, page=3, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=3&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:37,721 - WARNING - Topic=ai, page=3, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=3&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:40,565 - WARNING - Topic=ai, page=3, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=3&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:42,566 - WARNING - Non-ok API response for topic=ai, page=3: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 200 to 300. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:21:42,567 - INFO - Requesting topic=ai, page=4
+2026-04-23 09:21:44,490 - WARNING - Topic=ai, page=4, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=4&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:47,364 - WARNING - Topic=ai, page=4, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=4&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:50,290 - WARNING - Topic=ai, page=4, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=4&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:52,290 - WARNING - Non-ok API response for topic=ai, page=4: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 300 to 400. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:21:52,291 - INFO - Requesting topic=ai, page=5
+2026-04-23 09:21:53,177 - WARNING - Topic=ai, page=5, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=5&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:56,238 - WARNING - Topic=ai, page=5, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=5&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:21:59,080 - WARNING - Topic=ai, page=5, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%22artificial+intelligence%22+OR+AI+OR+%22machine+learning%22+OR+OpenAI+OR+ChatGPT+OR+LLM+OR+%22deep+learning%22&language=en&pageSize=100&page=5&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:01,081 - WARNING - Non-ok API response for topic=ai, page=5: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 400 to 500. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:22:01,086 - INFO - Fetching topic: fashion
+2026-04-23 09:22:01,086 - INFO - Expanded query: fashion OR style OR runway OR designer OR clothing OR beauty OR luxury OR couture
+2026-04-23 09:22:01,086 - INFO - Date window: 2026-04-09 to 2026-04-23
+2026-04-23 09:22:01,087 - INFO - Requesting topic=fashion, page=1
+2026-04-23 09:22:02,663 - INFO - Fetched 93 articles for topic=fashion, page=1
+2026-04-23 09:22:03,681 - INFO - Requesting topic=fashion, page=2
+2026-04-23 09:22:05,229 - WARNING - Topic=fashion, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:08,495 - WARNING - Topic=fashion, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:11,741 - WARNING - Topic=fashion, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:13,742 - WARNING - Non-ok API response for topic=fashion, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:22:13,743 - INFO - Requesting topic=fashion, page=3
+2026-04-23 09:22:14,563 - WARNING - Topic=fashion, page=3, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=3&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:17,315 - WARNING - Topic=fashion, page=3, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=3&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:20,072 - WARNING - Topic=fashion, page=3, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=3&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:22,073 - WARNING - Non-ok API response for topic=fashion, page=3: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 200 to 300. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:22:22,073 - INFO - Requesting topic=fashion, page=4
+2026-04-23 09:22:23,486 - WARNING - Topic=fashion, page=4, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=4&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:26,313 - WARNING - Topic=fashion, page=4, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=4&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:29,144 - WARNING - Topic=fashion, page=4, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=4&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:31,145 - WARNING - Non-ok API response for topic=fashion, page=4: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 300 to 400. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:22:31,145 - INFO - Requesting topic=fashion, page=5
+2026-04-23 09:22:31,944 - WARNING - Topic=fashion, page=5, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=5&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:34,704 - WARNING - Topic=fashion, page=5, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=5&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:37,738 - WARNING - Topic=fashion, page=5, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=fashion+OR+style+OR+runway+OR+designer+OR+clothing+OR+beauty+OR+luxury+OR+couture&language=en&pageSize=100&page=5&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:39,740 - WARNING - Non-ok API response for topic=fashion, page=5: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 400 to 500. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:22:39,744 - INFO - Fetching topic: business
+2026-04-23 09:22:39,745 - INFO - Expanded query: business OR market OR finance OR economy OR trade OR investment OR company
+2026-04-23 09:22:39,745 - INFO - Date window: 2026-04-09 to 2026-04-23
+2026-04-23 09:22:39,746 - INFO - Requesting topic=business, page=1
+2026-04-23 09:22:40,762 - INFO - Fetched 95 articles for topic=business, page=1
+2026-04-23 09:22:41,767 - INFO - Requesting topic=business, page=2
+2026-04-23 09:22:42,590 - WARNING - Topic=business, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:45,460 - WARNING - Topic=business, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:48,363 - WARNING - Topic=business, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:50,364 - WARNING - Non-ok API response for topic=business, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:22:50,365 - INFO - Requesting topic=business, page=3
+2026-04-23 09:22:51,210 - WARNING - Topic=business, page=3, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=3&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:54,082 - WARNING - Topic=business, page=3, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=3&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:57,001 - WARNING - Topic=business, page=3, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=3&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:22:59,002 - WARNING - Non-ok API response for topic=business, page=3: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 200 to 300. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:22:59,003 - INFO - Requesting topic=business, page=4
+2026-04-23 09:22:59,849 - WARNING - Topic=business, page=4, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=4&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:02,683 - WARNING - Topic=business, page=4, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=4&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:05,574 - WARNING - Topic=business, page=4, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=4&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:07,575 - WARNING - Non-ok API response for topic=business, page=4: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 300 to 400. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:23:07,576 - INFO - Requesting topic=business, page=5
+2026-04-23 09:23:08,446 - WARNING - Topic=business, page=5, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=5&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:11,249 - WARNING - Topic=business, page=5, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=5&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:14,052 - WARNING - Topic=business, page=5, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=business+OR+market+OR+finance+OR+economy+OR+trade+OR+investment+OR+company&language=en&pageSize=100&page=5&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:16,053 - WARNING - Non-ok API response for topic=business, page=5: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 400 to 500. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:23:16,058 - INFO - Fetching topic: technology
+2026-04-23 09:23:16,058 - INFO - Expanded query: technology OR software OR gadgets OR microsoft OR google OR apple OR startup
+2026-04-23 09:23:16,059 - INFO - Date window: 2026-04-09 to 2026-04-23
+2026-04-23 09:23:16,059 - INFO - Requesting topic=technology, page=1
+2026-04-23 09:23:17,046 - INFO - Fetched 97 articles for topic=technology, page=1
+2026-04-23 09:23:18,051 - INFO - Requesting topic=technology, page=2
+2026-04-23 09:23:18,930 - WARNING - Topic=technology, page=2, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=technology+OR+software+OR+gadgets+OR+microsoft+OR+google+OR+apple+OR+startup&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:21,769 - WARNING - Topic=technology, page=2, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=technology+OR+software+OR+gadgets+OR+microsoft+OR+google+OR+apple+OR+startup&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:24,601 - WARNING - Topic=technology, page=2, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=technology+OR+software+OR+gadgets+OR+microsoft+OR+google+OR+apple+OR+startup&language=en&pageSize=100&page=2&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:26,601 - WARNING - Non-ok API response for topic=technology, page=2: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 100 to 200. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:23:26,602 - INFO - Requesting topic=technology, page=3
+2026-04-23 09:23:27,529 - WARNING - Topic=technology, page=3, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=technology+OR+software+OR+gadgets+OR+microsoft+OR+google+OR+apple+OR+startup&language=en&pageSize=100&page=3&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:30,409 - WARNING - Topic=technology, page=3, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=technology+OR+software+OR+gadgets+OR+microsoft+OR+google+OR+apple+OR+startup&language=en&pageSize=100&page=3&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:33,256 - WARNING - Topic=technology, page=3, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=technology+OR+software+OR+gadgets+OR+microsoft+OR+google+OR+apple+OR+startup&language=en&pageSize=100&page=3&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:35,257 - WARNING - Non-ok API response for topic=technology, page=3: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 200 to 300. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:23:35,258 - INFO - Requesting topic=technology, page=4
+2026-04-23 09:23:37,275 - WARNING - Topic=technology, page=4, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=technology+OR+software+OR+gadgets+OR+microsoft+OR+google+OR+apple+OR+startup&language=en&pageSize=100&page=4&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:40,115 - WARNING - Topic=technology, page=4, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=technology+OR+software+OR+gadgets+OR+microsoft+OR+google+OR+apple+OR+startup&language=en&pageSize=100&page=4&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:43,938 - WARNING - Topic=technology, page=4, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=technology+OR+software+OR+gadgets+OR+microsoft+OR+google+OR+apple+OR+startup&language=en&pageSize=100&page=4&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:45,939 - WARNING - Non-ok API response for topic=technology, page=4: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 300 to 400. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:23:45,939 - INFO - Requesting topic=technology, page=5
+2026-04-23 09:23:46,850 - WARNING - Topic=technology, page=5, attempt=1 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=technology+OR+software+OR+gadgets+OR+microsoft+OR+google+OR+apple+OR+startup&language=en&pageSize=100&page=5&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:49,707 - WARNING - Topic=technology, page=5, attempt=2 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=technology+OR+software+OR+gadgets+OR+microsoft+OR+google+OR+apple+OR+startup&language=en&pageSize=100&page=5&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:52,633 - WARNING - Topic=technology, page=5, attempt=3 failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=technology+OR+software+OR+gadgets+OR+microsoft+OR+google+OR+apple+OR+startup&language=en&pageSize=100&page=5&sortBy=publishedAt&searchIn=title%2Cdescription%2Ccontent&from=2026-04-09&to=2026-04-23&apiKey=1791a8a4995f42a5b683c4ebce32b519
+2026-04-23 09:23:54,634 - WARNING - Non-ok API response for topic=technology, page=5: {'status': 'error', 'code': 'maximumResultsReached', 'message': 'You have requested too many results. Developer accounts are limited to a max of 100 results. You are trying to request results 400 to 500. Please upgrade to a paid plan if you need more results.'}
+2026-04-23 09:23:54,645 - INFO - Dropped 131 duplicate URLs
+2026-04-23 09:23:54,645 - INFO - Total unique fetched articles: 342
+2026-04-23 09:23:54,650 - INFO - 
+Topic Distribution:
+topic_requested
+ai            94
+war           88
+fashion       81
+business      41
+technology    38
+Name: count, dtype: int64
+2026-04-23 09:23:54,655 - INFO - 
+Category Distribution:
+category
+ai            146
+war            86
+general        59
+technology     19
+fashion        16
+business       12
+gaming          4
+Name: count, dtype: int64
+2026-04-23 09:23:54,670 - INFO - 
+Articles Per Day:
+published_at
+2026-04-22    342
+Name: count, dtype: int64
+2026-04-23 09:23:54,673 - INFO - Preview of fetched data:
+2026-04-23 09:23:54,674 - INFO - 
+          source_name            author  ... topic_requested                        fetched_at
+0  The Times of India               ANI  ...             war  2026-04-23T04:20:47.855730+00:00
+1       New York Post  Christian Arnold  ...             war  2026-04-23T04:20:47.855730+00:00
+2      Financial Post    Bloomberg News  ...             war  2026-04-23T04:20:47.855730+00:00
+3     Crypto Briefing    Estefano Gomez  ...             war  2026-04-23T04:20:47.855730+00:00
+4  The Times of India      Anupam Nagar  ...             war  2026-04-23T04:20:47.855730+00:00
+
+[5 rows x 10 columns]
+2026-04-23 09:23:54,737 - INFO - Saved raw data to data/raw_news.csv
+2026-04-23 09:23:54,806 - INFO - Inserted 342 new rows into SQLite
+2026-04-23 09:23:54,806 - INFO - News ingestion completed successfully
+2026-04-23 09:31:08,969 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-23 09:31:08,969 - INFO - Raw rows before cleaning: 342
+2026-04-23 09:31:08,973 - INFO - Dropped duplicate URLs: 0
+2026-04-23 09:31:08,974 - INFO - Dropped rows missing critical fields (['title', 'url']): 0
+2026-04-23 09:31:08,976 - INFO - Filled missing authors with 'Unknown': 65
+2026-04-23 09:31:08,977 - INFO - Filled missing source_name with 'Unknown': 0
+2026-04-23 09:31:08,983 - INFO - Invalid published_at values found: 0
+2026-04-23 09:31:08,985 - INFO - Dropped rows with invalid published_at: 0
+2026-04-23 09:31:08,998 - INFO - Processed rows after cleaning: 342
+2026-04-23 09:31:08,998 - INFO - Processed data saved to data/processed_news.csv
+2026-04-23 09:31:08,998 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-23 09:31:09,843 - INFO - ===== DATA VALIDATION REPORT =====
+2026-04-23 09:31:09,843 - INFO - Total rows: 659
+2026-04-23 09:31:09,843 - INFO - Total columns: 11
+2026-04-23 09:31:09,844 - INFO - Missing values per column:
+2026-04-23 09:31:09,846 - INFO - 
+article_id           0
+source_name          0
+author             107
+title                0
+description          7
+url                  0
+published_at         0
+content              0
+category             0
+topic_requested      0
+fetched_at           0
+dtype: int64
+2026-04-23 09:31:09,847 - INFO - Checking critical columns...
+2026-04-23 09:31:09,848 - INFO - Missing titles: 0
+2026-04-23 09:31:09,848 - INFO - Missing URLs: 0
+2026-04-23 09:31:09,849 - INFO - Duplicate URLs: 0
+2026-04-23 09:31:09,849 - INFO - Missing authors: 107
+2026-04-23 09:31:09,849 - INFO - Missing topic_requested values: 0
+2026-04-23 09:31:09,849 - INFO - Category distribution:
+2026-04-23 09:31:09,850 - INFO - 
+category
+ai            295
+war           162
+general       107
+business       34
+fashion        31
+technology     23
+gaming          7
+Name: count, dtype: int64
+2026-04-23 09:31:09,852 - INFO - Requested topic distribution:
+2026-04-23 09:31:09,852 - INFO - 
+topic_requested
+ai            182
+war           180
+fashion       167
+business       92
+technology     38
+Name: count, dtype: int64
+2026-04-23 09:31:09,854 - INFO - Running validation rules...
+2026-04-23 09:31:09,855 - INFO - URLs are valid
+2026-04-23 09:31:09,855 - INFO - No duplicate URLs
+2026-04-23 09:31:09,856 - INFO - Titles look fine
+2026-04-23 09:31:09,856 - WARNING - Missing authors found: 107 (allowed, non-critical field)
+2026-04-23 09:31:09,856 - INFO - All records have topic_requested
+2026-04-23 09:31:09,861 - INFO - published_at values are valid
+2026-04-23 09:31:09,861 - INFO - ===== VALIDATION COMPLETE =====
+2026-04-23 19:07:49,775 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-23 19:07:49,775 - INFO - Raw rows before cleaning: 342
+2026-04-23 19:07:49,778 - INFO - Dropped duplicate URLs: 0
+2026-04-23 19:07:49,779 - INFO - Dropped rows missing critical fields (['title', 'url']): 0
+2026-04-23 19:07:49,780 - INFO - Filled missing authors with 'Unknown': 65
+2026-04-23 19:07:49,780 - INFO - Filled missing source_name with 'Unknown': 0
+2026-04-23 19:07:49,785 - INFO - Invalid published_at values found: 0
+2026-04-23 19:07:49,786 - INFO - Dropped rows with invalid published_at: 0
+2026-04-23 19:07:49,796 - INFO - Processed rows after cleaning: 342
+2026-04-23 19:07:49,797 - INFO - Processed data saved to data/processed_news.csv
+2026-04-23 19:07:49,797 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-23 19:15:52,174 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-23 19:15:52,174 - INFO - Raw rows before cleaning: 342
+2026-04-23 19:15:52,177 - INFO - Dropped duplicate URLs: 0
+2026-04-23 19:15:52,178 - INFO - Dropped rows missing critical fields (['title', 'url']): 0
+2026-04-23 19:15:52,179 - INFO - Filled missing authors with 'Unknown': 65
+2026-04-23 19:15:52,179 - INFO - Filled missing source_name with 'Unknown': 0
+2026-04-23 19:15:52,184 - INFO - Invalid published_at values found: 0
+2026-04-23 19:15:52,186 - INFO - Dropped rows with invalid published_at: 0
+2026-04-23 19:15:52,201 - INFO - Processed rows after cleaning: 342
+2026-04-23 19:15:52,201 - INFO - Processed data saved to data/processed_news.csv
+2026-04-23 19:15:52,202 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-23 20:46:48,021 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-23 20:46:48,021 - INFO - Rows before cleaning: 258
+2026-04-23 20:46:48,022 - INFO - Dropped column: topic_country
+2026-04-23 20:46:48,024 - INFO - Dropped duplicate URLs: 0
+2026-04-23 20:46:48,025 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-23 20:46:48,028 - INFO - Invalid published_at values: 50
+2026-04-23 20:46:48,030 - INFO - Dropped rows with invalid dates: 50
+2026-04-23 20:46:48,030 - INFO - Rows after cleaning: 208
+2026-04-23 20:46:48,038 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-23 20:46:48,039 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-23 20:59:31,477 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-23 20:59:31,477 - INFO - Rows before cleaning: 367
+2026-04-23 20:59:31,478 - INFO - Dropped column: topic_country
+2026-04-23 20:59:31,480 - INFO - Dropped duplicate URLs: 0
+2026-04-23 20:59:31,481 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-23 20:59:31,484 - INFO - Invalid published_at values: 50
+2026-04-23 20:59:31,486 - INFO - Dropped rows with invalid dates: 50
+2026-04-23 20:59:31,486 - INFO - Rows after cleaning: 317
+2026-04-23 20:59:31,492 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-23 20:59:31,493 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-24 18:01:51,033 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-24 18:01:51,034 - INFO - Rows before cleaning: 555
+2026-04-24 18:01:51,035 - INFO - Dropped column: topic_country
+2026-04-24 18:01:51,037 - INFO - Dropped duplicate URLs: 0
+2026-04-24 18:01:51,038 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-24 18:01:51,042 - INFO - Invalid published_at values: 98
+2026-04-24 18:01:51,044 - INFO - Dropped rows with invalid dates: 98
+2026-04-24 18:01:51,044 - INFO - Rows after cleaning: 457
+2026-04-24 18:01:51,055 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-24 18:01:51,055 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-25 16:01:08,880 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-25 16:01:08,881 - INFO - Rows before cleaning: 744
+2026-04-25 16:01:08,882 - INFO - Dropped column: topic_country
+2026-04-25 16:01:08,884 - INFO - Dropped duplicate URLs: 0
+2026-04-25 16:01:08,885 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-25 16:01:08,889 - INFO - Invalid published_at values: 140
+2026-04-25 16:01:08,891 - INFO - Dropped rows with invalid dates: 140
+2026-04-25 16:01:08,892 - INFO - Rows after cleaning: 604
+2026-04-25 16:01:08,902 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-25 16:01:08,902 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-25 16:15:35,713 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-25 16:15:35,714 - INFO - Rows before cleaning: 744
+2026-04-25 16:15:35,715 - INFO - Dropped column: topic_country
+2026-04-25 16:15:35,718 - INFO - Dropped duplicate URLs: 0
+2026-04-25 16:15:35,720 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-25 16:15:35,725 - INFO - Invalid published_at values: 140
+2026-04-25 16:15:35,728 - INFO - Dropped rows with invalid dates: 140
+2026-04-25 16:15:35,728 - INFO - Rows after cleaning: 604
+2026-04-25 16:15:35,740 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-25 16:15:35,740 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-25 22:56:57,605 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-25 22:56:57,614 - INFO - Rows before cleaning: 744
+2026-04-25 22:56:57,616 - INFO - Dropped column: topic_country
+2026-04-25 22:56:57,620 - INFO - Dropped duplicate URLs: 0
+2026-04-25 22:56:57,622 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-25 22:56:57,627 - INFO - Invalid published_at values: 140
+2026-04-25 22:56:57,630 - INFO - Dropped rows with invalid dates: 140
+2026-04-25 22:56:57,631 - INFO - Rows after cleaning: 604
+2026-04-25 22:56:57,646 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-25 22:56:57,646 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-26 21:36:37,639 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-26 21:36:37,639 - INFO - Rows before cleaning: 961
+2026-04-26 21:36:37,641 - INFO - Dropped column: topic_country
+2026-04-26 21:36:37,645 - INFO - Dropped duplicate URLs: 0
+2026-04-26 21:36:37,647 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-26 21:36:37,651 - INFO - Invalid published_at values: 188
+2026-04-26 21:36:37,654 - INFO - Dropped rows with invalid dates: 188
+2026-04-26 21:36:37,655 - INFO - Rows after cleaning: 773
+2026-04-26 21:36:37,672 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-26 21:36:37,672 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-28 10:36:15,629 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-28 10:36:15,630 - INFO - Rows before cleaning: 1219
+2026-04-28 10:36:15,631 - INFO - Dropped column: topic_country
+2026-04-28 10:36:15,634 - INFO - Dropped duplicate URLs: 0
+2026-04-28 10:36:15,636 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-28 10:36:15,641 - INFO - Invalid published_at values: 237
+2026-04-28 10:36:15,644 - INFO - Dropped rows with invalid dates: 237
+2026-04-28 10:36:15,644 - INFO - Rows after cleaning: 982
+2026-04-28 10:36:15,660 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-28 10:36:15,660 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-28 10:46:31,386 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-28 10:46:31,386 - INFO - Rows before cleaning: 1219
+2026-04-28 10:46:31,387 - INFO - Dropped column: topic_country
+2026-04-28 10:46:31,391 - INFO - Dropped duplicate URLs: 0
+2026-04-28 10:46:31,393 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-28 10:46:31,396 - INFO - Invalid published_at values: 237
+2026-04-28 10:46:31,398 - INFO - Dropped rows with invalid dates: 237
+2026-04-28 10:46:31,398 - INFO - Rows after cleaning: 982
+2026-04-28 10:46:31,413 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-28 10:46:31,413 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-28 10:52:33,337 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-28 10:52:33,338 - INFO - Rows before cleaning: 1219
+2026-04-28 10:52:33,339 - INFO - Dropped column: topic_country
+2026-04-28 10:52:33,344 - INFO - Dropped duplicate URLs: 0
+2026-04-28 10:52:33,346 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-28 10:52:33,351 - INFO - Invalid published_at values: 237
+2026-04-28 10:52:33,354 - INFO - Dropped rows with invalid dates: 237
+2026-04-28 10:52:33,354 - INFO - Rows after cleaning: 982
+2026-04-28 10:52:33,373 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-28 10:52:33,374 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-30 10:20:03,924 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-30 10:20:03,925 - INFO - Rows before cleaning: 1432
+2026-04-30 10:20:03,926 - INFO - Dropped column: topic_country
+2026-04-30 10:20:03,932 - INFO - Dropped duplicate URLs: 0
+2026-04-30 10:20:03,934 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-30 10:20:03,942 - INFO - Invalid published_at values: 284
+2026-04-30 10:20:03,944 - INFO - Dropped rows with invalid dates: 284
+2026-04-30 10:20:03,944 - INFO - Rows after cleaning: 1148
+2026-04-30 10:20:03,961 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-30 10:20:03,961 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-30 10:54:11,594 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-30 10:54:11,594 - INFO - Rows before cleaning: 1432
+2026-04-30 10:54:11,596 - INFO - Dropped column: topic_country
+2026-04-30 10:54:11,600 - INFO - Dropped duplicate URLs: 0
+2026-04-30 10:54:11,602 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-30 10:54:11,608 - INFO - Invalid published_at values: 284
+2026-04-30 10:54:11,610 - INFO - Dropped rows with invalid dates: 284
+2026-04-30 10:54:11,611 - INFO - Rows after cleaning: 1148
+2026-04-30 10:54:11,627 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-30 10:54:11,627 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-30 10:59:16,394 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-30 10:59:16,395 - INFO - Rows before cleaning: 1432
+2026-04-30 10:59:16,397 - INFO - Dropped column: topic_country
+2026-04-30 10:59:16,405 - INFO - Dropped duplicate URLs: 0
+2026-04-30 10:59:16,408 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-30 10:59:16,422 - INFO - Invalid published_at values: 284
+2026-04-30 10:59:16,430 - INFO - Dropped rows with invalid dates: 284
+2026-04-30 10:59:16,431 - INFO - Rows after cleaning: 1148
+2026-04-30 10:59:16,489 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-30 10:59:16,489 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-30 13:31:26,756 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-30 13:31:26,756 - INFO - Rows before cleaning: 1472
+2026-04-30 13:31:26,758 - INFO - Dropped column: topic_country
+2026-04-30 13:31:26,761 - INFO - Dropped duplicate URLs: 0
+2026-04-30 13:31:26,763 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-30 13:31:26,770 - INFO - Invalid published_at values: 284
+2026-04-30 13:31:26,772 - INFO - Dropped rows with invalid dates: 284
+2026-04-30 13:31:26,773 - INFO - Rows after cleaning: 1188
+2026-04-30 13:31:26,789 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-30 13:31:26,789 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-30 13:54:03,307 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-30 13:54:03,308 - INFO - Rows before cleaning: 1472
+2026-04-30 13:54:03,310 - INFO - Dropped column: topic_country
+2026-04-30 13:54:03,314 - INFO - Dropped duplicate URLs: 0
+2026-04-30 13:54:03,316 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-30 13:54:03,324 - INFO - Invalid published_at values: 284
+2026-04-30 13:54:03,327 - INFO - Dropped rows with invalid dates: 284
+2026-04-30 13:54:03,327 - INFO - Rows after cleaning: 1188
+2026-04-30 13:54:03,350 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-30 13:54:03,350 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-30 20:24:32,810 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-30 20:24:32,811 - INFO - Rows before cleaning: 1472
+2026-04-30 20:24:32,812 - INFO - Dropped column: topic_country
+2026-04-30 20:24:32,816 - INFO - Dropped duplicate URLs: 0
+2026-04-30 20:24:32,818 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-30 20:24:32,824 - INFO - Invalid published_at values: 284
+2026-04-30 20:24:32,828 - INFO - Dropped rows with invalid dates: 284
+2026-04-30 20:24:32,828 - INFO - Rows after cleaning: 1188
+2026-04-30 20:24:32,856 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-30 20:24:32,856 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-30 20:54:14,022 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-30 20:54:14,022 - INFO - Rows before cleaning: 1472
+2026-04-30 20:54:14,023 - INFO - Dropped column: topic_country
+2026-04-30 20:54:14,026 - INFO - Dropped duplicate URLs: 0
+2026-04-30 20:54:14,027 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-30 20:54:14,031 - INFO - Invalid published_at values: 284
+2026-04-30 20:54:14,033 - INFO - Dropped rows with invalid dates: 284
+2026-04-30 20:54:14,033 - INFO - Rows after cleaning: 1188
+2026-04-30 20:54:14,048 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-30 20:54:14,048 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-30 20:54:57,610 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-30 20:54:57,611 - INFO - Rows before cleaning: 1472
+2026-04-30 20:54:57,612 - INFO - Dropped column: topic_country
+2026-04-30 20:54:57,619 - INFO - Dropped duplicate URLs: 0
+2026-04-30 20:54:57,621 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-30 20:54:57,630 - INFO - Invalid published_at values: 284
+2026-04-30 20:54:57,636 - INFO - Dropped rows with invalid dates: 284
+2026-04-30 20:54:57,637 - INFO - Rows after cleaning: 1188
+2026-04-30 20:54:57,668 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-30 20:54:57,668 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-30 20:55:06,901 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-30 20:55:06,902 - INFO - Rows before cleaning: 1472
+2026-04-30 20:55:06,904 - INFO - Dropped column: topic_country
+2026-04-30 20:55:06,908 - INFO - Dropped duplicate URLs: 0
+2026-04-30 20:55:06,910 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-30 20:55:06,915 - INFO - Invalid published_at values: 284
+2026-04-30 20:55:06,917 - INFO - Dropped rows with invalid dates: 284
+2026-04-30 20:55:06,917 - INFO - Rows after cleaning: 1188
+2026-04-30 20:55:06,943 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-30 20:55:06,943 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-04-30 21:08:07,468 - INFO - ===== DATA CLEANING STARTED =====
+2026-04-30 21:08:07,468 - INFO - Rows before cleaning: 1472
+2026-04-30 21:08:07,469 - INFO - Dropped column: topic_country
+2026-04-30 21:08:07,472 - INFO - Dropped duplicate URLs: 0
+2026-04-30 21:08:07,474 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-04-30 21:08:07,478 - INFO - Invalid published_at values: 284
+2026-04-30 21:08:07,480 - INFO - Dropped rows with invalid dates: 284
+2026-04-30 21:08:07,480 - INFO - Rows after cleaning: 1188
+2026-04-30 21:08:07,495 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-04-30 21:08:07,495 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-05-01 09:10:00,266 - INFO - ===== DATA CLEANING STARTED =====
+2026-05-01 09:10:00,267 - INFO - Rows before cleaning: 1472
+2026-05-01 09:10:00,268 - INFO - Dropped column: topic_country
+2026-05-01 09:10:00,273 - INFO - Dropped duplicate URLs: 0
+2026-05-01 09:10:00,275 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-05-01 09:10:00,281 - INFO - Invalid published_at values: 284
+2026-05-01 09:10:00,283 - INFO - Dropped rows with invalid dates: 284
+2026-05-01 09:10:00,283 - INFO - Rows after cleaning: 1188
+2026-05-01 09:10:00,303 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-05-01 09:10:00,303 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-05-01 09:17:15,321 - INFO - ===== DATA CLEANING STARTED =====
+2026-05-01 09:17:15,321 - INFO - Rows before cleaning: 1472
+2026-05-01 09:17:15,322 - INFO - Dropped column: topic_country
+2026-05-01 09:17:15,325 - INFO - Dropped duplicate URLs: 0
+2026-05-01 09:17:15,327 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-05-01 09:17:15,330 - INFO - Invalid published_at values: 284
+2026-05-01 09:17:15,332 - INFO - Dropped rows with invalid dates: 284
+2026-05-01 09:17:15,332 - INFO - Rows after cleaning: 1188
+2026-05-01 09:17:15,348 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-05-01 09:17:15,348 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-05-01 09:26:22,745 - INFO - ===== DATA CLEANING STARTED =====
+2026-05-01 09:26:22,746 - INFO - Rows before cleaning: 1472
+2026-05-01 09:26:22,750 - INFO - Dropped column: topic_country
+2026-05-01 09:26:22,764 - INFO - Dropped duplicate URLs: 0
+2026-05-01 09:26:22,772 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-05-01 09:26:22,789 - INFO - Invalid published_at values: 284
+2026-05-01 09:26:22,796 - INFO - Dropped rows with invalid dates: 284
+2026-05-01 09:26:22,797 - INFO - Rows after cleaning: 1188
+2026-05-01 09:26:22,862 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-05-01 09:26:22,863 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-05-01 09:42:24,505 - INFO - ===== DATA CLEANING STARTED =====
+2026-05-01 09:42:24,506 - INFO - Rows before cleaning: 1472
+2026-05-01 09:42:24,509 - INFO - Dropped column: topic_country
+2026-05-01 09:42:24,522 - INFO - Dropped duplicate URLs: 0
+2026-05-01 09:42:24,527 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-05-01 09:42:24,545 - INFO - Invalid published_at values: 284
+2026-05-01 09:42:24,551 - INFO - Dropped rows with invalid dates: 284
+2026-05-01 09:42:24,551 - INFO - Rows after cleaning: 1188
+2026-05-01 09:42:24,614 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-05-01 09:42:24,614 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-05-01 10:37:41,285 - INFO - ===== DATA CLEANING STARTED =====
+2026-05-01 10:37:41,286 - INFO - Rows before cleaning: 1472
+2026-05-01 10:37:41,291 - INFO - Dropped column: topic_country
+2026-05-01 10:37:41,309 - INFO - Dropped duplicate URLs: 0
+2026-05-01 10:37:41,321 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-05-01 10:37:41,337 - INFO - Invalid published_at values: 284
+2026-05-01 10:37:41,349 - INFO - Dropped rows with invalid dates: 284
+2026-05-01 10:37:41,350 - INFO - Rows after cleaning: 1188
+2026-05-01 10:37:41,531 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-05-01 10:37:41,532 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-05-01 10:42:27,563 - INFO - ===== DATA CLEANING STARTED =====
+2026-05-01 10:42:27,564 - INFO - Rows before cleaning: 1472
+2026-05-01 10:42:27,567 - INFO - Dropped column: topic_country
+2026-05-01 10:42:27,585 - INFO - Dropped duplicate URLs: 0
+2026-05-01 10:42:27,589 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-05-01 10:42:27,602 - INFO - Invalid published_at values: 284
+2026-05-01 10:42:27,608 - INFO - Dropped rows with invalid dates: 284
+2026-05-01 10:42:27,608 - INFO - Rows after cleaning: 1188
+2026-05-01 10:42:27,676 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-05-01 10:42:27,677 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-05-01 10:48:22,064 - INFO - ===== DATA CLEANING STARTED =====
+2026-05-01 10:48:22,065 - INFO - Rows before cleaning: 1472
+2026-05-01 10:48:22,069 - INFO - Dropped column: topic_country
+2026-05-01 10:48:22,092 - INFO - Dropped duplicate URLs: 0
+2026-05-01 10:48:22,097 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-05-01 10:48:22,120 - INFO - Invalid published_at values: 284
+2026-05-01 10:48:22,131 - INFO - Dropped rows with invalid dates: 284
+2026-05-01 10:48:22,132 - INFO - Rows after cleaning: 1188
+2026-05-01 10:48:22,227 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-05-01 10:48:22,228 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-05-01 10:53:43,479 - INFO - ===== DATA CLEANING STARTED =====
+2026-05-01 10:53:43,479 - INFO - Rows before cleaning: 1472
+2026-05-01 10:53:43,482 - INFO - Dropped column: topic_country
+2026-05-01 10:53:43,498 - INFO - Dropped duplicate URLs: 0
+2026-05-01 10:53:43,503 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-05-01 10:53:43,524 - INFO - Invalid published_at values: 284
+2026-05-01 10:53:43,536 - INFO - Dropped rows with invalid dates: 284
+2026-05-01 10:53:43,537 - INFO - Rows after cleaning: 1188
+2026-05-01 10:53:43,624 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-05-01 10:53:43,625 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-05-01 11:00:19,967 - INFO - ===== DATA CLEANING STARTED =====
+2026-05-01 11:00:19,968 - INFO - Rows before cleaning: 1472
+2026-05-01 11:00:19,975 - INFO - Dropped column: topic_country
+2026-05-01 11:00:20,038 - INFO - Dropped duplicate URLs: 0
+2026-05-01 11:00:20,048 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-05-01 11:00:20,078 - INFO - Invalid published_at values: 284
+2026-05-01 11:00:20,090 - INFO - Dropped rows with invalid dates: 284
+2026-05-01 11:00:20,090 - INFO - Rows after cleaning: 1188
+2026-05-01 11:00:20,247 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-05-01 11:00:20,247 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-05-01 11:37:10,877 - INFO - ===== DATA CLEANING STARTED =====
+2026-05-01 11:37:10,878 - INFO - Rows before cleaning: 1472
+2026-05-01 11:37:10,880 - INFO - Dropped column: topic_country
+2026-05-01 11:37:10,889 - INFO - Dropped duplicate URLs: 0
+2026-05-01 11:37:10,891 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-05-01 11:37:10,904 - INFO - Invalid published_at values: 284
+2026-05-01 11:37:10,908 - INFO - Dropped rows with invalid dates: 284
+2026-05-01 11:37:10,908 - INFO - Rows after cleaning: 1188
+2026-05-01 11:37:10,961 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-05-01 11:37:10,961 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-05-01 11:39:56,499 - INFO - ===== DATA CLEANING STARTED =====
+2026-05-01 11:39:56,500 - INFO - Rows before cleaning: 1472
+2026-05-01 11:39:56,513 - INFO - Dropped column: topic_country
+2026-05-01 11:39:56,583 - INFO - Dropped duplicate URLs: 0
+2026-05-01 11:39:56,593 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-05-01 11:39:56,633 - INFO - Invalid published_at values: 284
+2026-05-01 11:39:56,650 - INFO - Dropped rows with invalid dates: 284
+2026-05-01 11:39:56,650 - INFO - Rows after cleaning: 1188
+2026-05-01 11:39:56,778 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-05-01 11:39:56,779 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-05-01 11:45:41,414 - INFO - ===== DATA CLEANING STARTED =====
+2026-05-01 11:45:41,414 - INFO - Rows before cleaning: 1472
+2026-05-01 11:45:41,417 - INFO - Dropped column: topic_country
+2026-05-01 11:45:41,428 - INFO - Dropped duplicate URLs: 0
+2026-05-01 11:45:41,431 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-05-01 11:45:41,452 - INFO - Invalid published_at values: 284
+2026-05-01 11:45:41,459 - INFO - Dropped rows with invalid dates: 284
+2026-05-01 11:45:41,460 - INFO - Rows after cleaning: 1188
+2026-05-01 11:45:41,523 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-05-01 11:45:41,524 - INFO - ===== DATA CLEANING COMPLETE =====
+2026-05-01 11:51:41,950 - INFO - ===== DATA CLEANING STARTED =====
+2026-05-01 11:51:41,950 - INFO - Rows before cleaning: 1472
+2026-05-01 11:51:41,953 - INFO - Dropped column: topic_country
+2026-05-01 11:51:41,967 - INFO - Dropped duplicate URLs: 0
+2026-05-01 11:51:41,970 - INFO - Dropped rows missing ['title', 'url']: 0
+2026-05-01 11:51:41,986 - INFO - Invalid published_at values: 284
+2026-05-01 11:51:41,992 - INFO - Dropped rows with invalid dates: 284
+2026-05-01 11:51:41,993 - INFO - Rows after cleaning: 1188
+2026-05-01 11:51:42,051 - INFO - Cleaned data saved to: data/cleaned_news.csv
+2026-05-01 11:51:42,051 - INFO - ===== DATA CLEANING COMPLETE =====

@@ -1,0 +1,161 @@
+# News Trends Analytics Pipeline
+
+## Checkpoint Presentation Content
+
+### Slide 1 — Project Overview
+
+**Title:** News Trends Analytics Pipeline
+
+**Problem Statement:**
+News is published continuously across many sources, making it difficult to track patterns, major topics, and source activity in a structured way. This project aims to build an automated data engineering pipeline that collects live news headlines, stores them in a structured database, cleans and validates the data, and serves analytical insights through a dashboard.
+
+**Data Source:**
+
+* NewsAPI (real-time news headlines and article metadata)
+
+**Expected Outcomes:**
+
+* Automated ingestion of live news data
+* Structured storage of article metadata
+* Data cleaning and validation
+* Analytical insights such as source frequency, category trends, and keyword patterns
+* Dashboard-based presentation of results
+
+---
+
+### Slide 2 — Architecture Design
+
+**Pipeline Architecture:**
+
+NewsAPI → Ingestion Script → SQLite Database → Data Cleaning & Validation → Analytics Layer → Streamlit Dashboard
+                                                                                         ↓
+                                                                                     Prefect Orchestration
+
+**Technology Stack:**
+
+* Python for ingestion and processing
+* Requests for API calls
+* SQLite for structured storage
+* Pandas for transformation and analysis
+* Prefect for orchestration and scheduling
+* Streamlit for serving visual insights
+
+**Design Rationale:**
+
+* Modular structure makes the project easier to maintain
+* SQLite is lightweight and easy to integrate
+* Prefect supports retries, scheduling, and observable flows
+* Streamlit enables fast development of an interactive dashboard
+
+---
+
+### Slide 3 — Progress to Date
+
+**Completed Work:**
+
+* Selected the project topic and use case
+* Chosen NewsAPI as the primary live data source
+* Defined the high-level pipeline architecture
+* Planned structured storage using SQLite
+* Designed the initial article schema
+* Identified analytics to be implemented for the dashboard
+
+**Initial Data Plan:**
+
+* Fetch top headlines from NewsAPI
+* Extract relevant article metadata
+* Store articles in a database table
+* Remove duplicates using article URL as a unique identifier
+
+**Challenges Anticipated / Addressed:**
+
+* API authentication using API keys
+* Handling missing author and content fields
+* Managing repeated articles across fetches
+* Designing idempotent ingestion logic for re-runs
+
+---
+
+### Slide 4 — Next Steps
+
+**Immediate Next Steps:**
+
+* Implement ingestion script for NewsAPI
+* Save fetched articles into SQLite
+* Add validation checks for nulls and duplicates
+* Build initial analytics queries
+* Create Streamlit dashboard with charts
+* Wrap pipeline in a Prefect flow
+
+**Final Goal:**
+Develop a fully automated, reproducible, and containerized pipeline that continuously ingests and analyzes news data while providing an interactive interface for users.
+
+---
+
+## Speaking Notes
+
+### Slide 1
+
+We are building a news analytics pipeline that automatically collects live news data, stores it in a structured form, and generates useful insights from it.
+
+### Slide 2
+
+This is our end-to-end system design. News data is collected from the API, stored in SQLite, cleaned and analyzed with pandas, then presented through a dashboard. Prefect will orchestrate the full workflow.
+
+### Slide 3
+
+So far, we have finalized the project idea, selected the API, designed the architecture, and planned the schema and analytics layer.
+
+### Slide 4
+
+Our next steps are to implement ingestion, validate data quality, create analytics views, and automate the system using Prefect and Docker.
+
+---
+
+## Project Starter Plan
+
+### Suggested Folder Structure
+
+```text
+news_pipeline_project/
+├── ingestion/
+├── processing/
+├── storage/
+├── orchestration/
+├── serving/
+├── data/
+├── logs/
+├── README.md
+├── requirements.txt
+└── .env
+```
+
+### First Milestone
+
+1. Get a NewsAPI key
+2. Fetch top headlines from one category
+3. Save results as JSON and into SQLite
+4. Verify schema and row count
+5. Make one simple chart
+
+### Initial SQLite Table Schema
+
+**articles**
+
+* article_id INTEGER PRIMARY KEY AUTOINCREMENT
+* source_name TEXT
+* author TEXT
+* title TEXT
+* description TEXT
+* url TEXT UNIQUE
+* published_at TEXT
+* content TEXT
+* category TEXT
+* fetched_at TEXT
+
+### Minimum Checkpoint Demo
+
+* Show one successful API response
+* Show database table populated with articles
+* Show one chart such as article count by source
+* Show architecture slide
